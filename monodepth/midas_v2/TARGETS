@@ -1,0 +1,12 @@
+load("@fbcode_macros//build_defs:python_library.bzl", "python_library")
+
+python_library(
+    name = "midas_v2",
+    srcs = glob(["**/*.py"]),
+    deps = [
+        "//caffe2:torch",
+        "//x3d/lib/python:common",
+    ],
+    external_deps = [
+    ],
+)
